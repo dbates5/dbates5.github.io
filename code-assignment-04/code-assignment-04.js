@@ -32,3 +32,6 @@ let projectObject2 = {
     'Locations'
   ]
 }
+console.log(projectArray[2])
+console.log(projectObject.title)
+console.log(projectObject["title"])
