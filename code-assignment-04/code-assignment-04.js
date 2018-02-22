@@ -12,7 +12,7 @@ let projectObject = {
   desc: 'All locations of East Baton Rouge Schools',
   thumb: true,
 }
-let projectArray = [
+let projectArray2 = [
   3,
   'https://dbates5.github.io',
   'Dylans Portfolio',
@@ -20,7 +20,7 @@ let projectArray = [
   true,
   ['Project', 'Here and now', 'New']
 ]
-let projectObject = {
+let projectObject2 = {
   id: 4,
   url: 'https://dbates5.maps.arcgis.com/apps/webappviewer/index.html?id=5fb4d2f9bc82467c87ee00d8332dacd3',
   title: 'City Locations',
