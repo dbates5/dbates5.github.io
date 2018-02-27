@@ -2,22 +2,12 @@ let project1 = {
   id: 1,
   title: 'Dangerous Dogs',
   hasThumbnail: true
-  function imageCommand() {
-    var imgdraw = prompt("bass.png")
-    var img = document.createElement("img");
-    img.src = imgdraw;
-}
 }
 
 let project2 = {
   id: 2,
   title: 'US Cities',
   hasThumbnail: true
-  function imageCommand() {
-    var imgdraw = prompt("bass.png")
-    var img = document.createElement("img");
-    img.src = imgdraw;
-}
 }
 
 let projects = [
