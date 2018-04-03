@@ -1,5 +1,5 @@
 
-let mymap = L.map('Dylans_map').setView([51.505, -0.09], 13);
+let Dylans_map = L.map('Dylans_map').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png').addTo(Dylans_map)
 
