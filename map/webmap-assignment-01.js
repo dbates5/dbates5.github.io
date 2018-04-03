@@ -33,7 +33,7 @@ let popup = L.popup()
 
     Dylans_map.on('click', onMapClick);
 
-    var popup = L.popup();
+    let popup = L.popup();
 
 function onMapClick(e) {
     popup
