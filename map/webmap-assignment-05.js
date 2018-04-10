@@ -17,8 +17,8 @@ let contourUrl = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
 }).addTo(Dylans_map4);
 
 let DylansBasemaps = {
-  'Color basemap': USbasemap,
-  'Black & White basemap': newBasemap,
+  'Color basemap': newBasemap,
+  'Black & White basemap': USbasemap,
   'Contour basemap' : contourUrl
 }
 
