@@ -6,22 +6,20 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(Dylans_map);
 
-let flightPlanCoordinates = [
+let DylansCoordinates = ([
           {lat: 37.772, lng: -122.214},
           {lat: 21.291, lng: -157.821},
           {lat: -18.142, lng: 178.431},
           {lat: -27.467, lng: 153.027}
-        ];
+        ]);
 
 let polyline = L.polyline({
-          path: flightPlanCoordinates,
+          path: DylansCoordinates,
           geodesic: true,
           fillColor: 'red',
           fillOpacity: 1.0,
           strokeWeight: 2
         }).addTo(Dylans_map);
-
-
 
 let marker = L.marker([51.5, -0.09]).addTo(Dylans_map);
 

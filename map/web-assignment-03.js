@@ -20,7 +20,7 @@ let myIcon = L.icon({
 let marker2 = L.marker([51.5, -0.09], { icon: myIcon }).addTo(Dylans_map2);
 
 let circle2 = L.circle([51.508, -0.11], {
-    color: 'red',
+    color: 'purple',
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 500
@@ -31,3 +31,16 @@ let polygon2 = L.polygon([
     [51.503, -0.06],
     [51.51, -0.047]
 ]).addTo(Dylans_map2);
+
+let DylansStyle = {
+  color: 'yellow',
+  fillColor: 'purple'
+}
+
+let DylansCoords = ([
+	[30.389562, -91.169038],
+	[30.395854, -91.185696],
+	[30.400318, -91.156826]
+]);
+
+let  = L.polygon(DylansCoords, DylansStyle).addTo(Dylans_map2)
