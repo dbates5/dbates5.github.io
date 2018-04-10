@@ -7,14 +7,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(Dylans_map);
 
 let DylansCoordinates = ([
-          {lat: 37.772, lng: -122.214},
-          {lat: 21.291, lng: -157.821},
-          {lat: -18.142, lng: 178.431},
-          {lat: -27.467, lng: 153.027}
+          [37.772, -122.214],
+          [21.291, -157.821],
+          [-18.142, 178.431],
+          [-27.467, 153.027]
         ]);
 
-let polyline = L.polyline({
-          path: DylansCoordinates,
+let polyline = L.polyline(DylansCoordinates,{
           geodesic: true,
           fillColor: 'red',
           fillOpacity: 1.0,
