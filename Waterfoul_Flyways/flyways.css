@@ -1,1 +1,5 @@
-#flyways { height : 1000 }
+#Flyways { height : 1000px }
+
+body {background-color: lime}
+h1 {color: red}
+h1 { text-align: center}
