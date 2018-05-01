@@ -11,14 +11,21 @@ let USbasemap = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}
 let color_map = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
 let map2 = L.tileLayer(color_map);
 
+let elevationmap =  L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+	maxZoom: 17,
+	attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+}).addTo(map1);
+
+
 let Basemaps = {
   'Color basemap': map2,
-  'Black & White basemap': USbasemap
-}
+  'Black & White basemap': USbasemap,
+	'Elevation Map' : elevationmap
+};
 
 let Controloptions = {
   collapsed: false
-}
+};
 
 let operlayer = {}
 
@@ -112,3 +119,19 @@ let Closepolyline = L.polyline(DUCoordinates,{
           fillOpacity: 1.0,
           strokeWeight: 2
         }).addTo(map1);
+
+let StuttgartAR = ([
+	[34.739725, -92.285069],
+	[35.131108, -90.032636],
+	[34.193671, -90.574577]
+]);
+
+let StuttgartOptions = {
+	color : 'Green',
+	fillColor : 'Green',
+	fillOpacity : .6
+
+};
+
+
+let ARpolygon = L.polygon(StuttgartAR, StuttgartOptions).addTo(map1);
