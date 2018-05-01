@@ -133,5 +133,4 @@ let StuttgartOptions = {
 
 };
 
-
 let ARpolygon = L.polygon(StuttgartAR, StuttgartOptions).addTo(map1);
