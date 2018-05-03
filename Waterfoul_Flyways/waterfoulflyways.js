@@ -40,7 +40,7 @@ let DuckIcon = L.icon({
 	popupAnchor: [-3, -76]
 });
 
-let marker2 = L.marker([39.8283, -98.5795], { icon: DuckIcon }).addTo(map1);
+let marker2 = L.marker([34.5004, -91.5526], { icon: DuckIcon }).addTo(map1);
 
 function DucksUnlimited (feature) {
  let flyway = feature.properties["FLYWAY"]
